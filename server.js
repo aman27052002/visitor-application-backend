@@ -31,6 +31,8 @@ app.use('/api/admin/all-admin-gatekeepers', adminGatekeeperRoutes); // Use the n
 // Error Handlers
 app.use(notFound);
 app.use(errorHandler);
-
+app.get("/",(req,res)=>{
+  return res.status(200).json({message:"home page"})
+})
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
