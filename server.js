@@ -13,7 +13,7 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+app.use(cors({ origin: "https://visitor-application.vercel.app/" }));
 app.use(express.json());
 
 // Routes
