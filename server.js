@@ -4,8 +4,8 @@ import cors from 'cors';
 import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
-import gatekeeperRoutes from './routes/gatekeeperRoutes.js';
-import adminGatekeeperRoutes from './routes/adminGatekeeperRoutes.js'; // New Route
+import gatekeeperRoutes from './routes/gateKeeperRoutes.js';
+import adminGatekeeperRoutes from './routes/adminGateKeeperRoutes.js'; // New Route
 import { notFound, errorHandler } from './utils/customError.js';
 
 dotenv.config();
